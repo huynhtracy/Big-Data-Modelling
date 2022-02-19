@@ -1,5 +1,8 @@
 function [t, p, R2] = eigDecomp(data,components)
 
+%the function preprocesses the data and performs PCA using eigenvector decomposition
+%returning the score, loading vectors, and R squared value of the model
+
 %preprocessing data - center and scale
 
 %for each column (variable) of the data matrix 
