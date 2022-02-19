@@ -1,7 +1,5 @@
-%Question 6: witten on Jan 29
-
-%function [x] = LinReg(S, P, B,E)
-%must add outputs in function declaration
+%Program to fit a multivariate regression model to a data set 
+%Modelling a solid oxide fuel cell (SOFC) plant with compressed air energy storage (CAES)
 
 summ = 0; 
 [P,S,B,E] = SOFC_Data();
@@ -71,8 +69,6 @@ for i = 1:length(S)
     end
 end
   
-
- % Make a pretty picture
 [S_plot,P_plot] = meshgrid(S,P);
 c = ['k','r','g','b','m','c'];
 
@@ -97,7 +93,6 @@ surf(S,P,ePlot(:,:,6),'FaceAlpha',0.5,'FaceColor',[0.2 0.7 0.9]);
 
 
 
-
 % xlabel('Cathode Split (S, unitless)','Rotation',15,'Position',[0.85,49,67]);
 % ylabel('Cavern Pressure (P, bar)','Rotation',-25,'Position',[-0.12,56,252]);
 xlabel('Cathode Split (S, unitless)');
@@ -106,8 +101,6 @@ zlabel('Net Plant Output (E, MW)');
 box on;
 hold off;
  
- 
-%end
 
 summ2 = 0;
 summ3 = 0;
